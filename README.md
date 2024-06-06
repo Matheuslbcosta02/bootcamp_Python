@@ -16,3 +16,9 @@
 
 📗[Comandos para editar README em Markdown](https://docs.github.com/pt/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax#headings)
 
+📒 [Editor para README em markdown](https://readme.so/pt/editor)
+
+📘 [Documentação GIT](https://www.git-scm.com/docs)
+
+📕 [Aprender e praticar GIT](https://learngitbranching.js.org/?locale=pt_BR)
+
