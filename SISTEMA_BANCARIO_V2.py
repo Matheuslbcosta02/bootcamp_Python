@@ -45,7 +45,7 @@ def sacar(*, saldo_conta , saque , extrato,limite,numero_saques,limite_saques):
     else:
         print("Valor informado é inválido!")
 
-    return saldo_conta, extrato
+    return saldo_conta, extrato, numero_saques
 
 def mostrar_extrato(saldo_conta,/,*,extrato):
     print("\n**************EXTRATO**************\n")
@@ -115,7 +115,7 @@ def main():
         elif opcao == 'S':
             print("Você selecionou a opção saque.")
             saque = float(input("Digite o valor que você gostaria de sacar: "))
-            saldo_conta,extrato = sacar(saldo_conta=saldo_conta, saque=saque, extrato=extrato,
+            saldo_conta,extrato, numero_saques = sacar(saldo_conta=saldo_conta, saque=saque, extrato=extrato,
                                         limite=limite, numero_saques=numero_saques, limite_saques=LIMITE_SAQUES)
 
         elif opcao == 'E':
