@@ -13,17 +13,20 @@ def verificar_primo(valor):
             a = print(f"{valor} Não é um número primo.")
         else:
             a = print(f"{valor} É um número primo.")
-        return a
+        divisores.sort()
+        return a, divisores
     else:
-        return None
+        return
     
 numero = 2
 
 while numero > 1:
     try:
         numero = int(input("Digite o número para verificar se ele é primo: "))
-        verificar_primo(numero)
+        resposta, lista = verificar_primo(numero)
+        print(f"Os divisores do número {numero} são: ")
+        print(lista)
     except:
-        print("Houve um erro, você precisa digitar um número.")
+        print("Houve um erro, você precisa digitar um número que seja válido.")
 else:
     print(f"Por definição números primos são valores inteiros maiores do que 1, o valor {numero} não pode ser verificado.")
